@@ -6,8 +6,8 @@ html, body {
 
 body {
   background-image: linear-gradient(to left top, #cf04b5, #bc00b1, #a900ad, #9500a8, #8100a3, #761baa, #6a29b0, #5c33b6, #5249c9, #455cda, #326eea, #1180f8);
-  background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la ventana del navegador */
-  background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+  background-size: cover; 
+  background-attachment: fixed; 
 }
 .title {
 text-align: center; 
@@ -33,7 +33,7 @@ margin: 0.5em;
 	width: 300px;
 	border:2px solid rgb(255, 48, 255);
 	text-align: center;
-	margin:20px auto; /*top and bottom 20 px and centre it*/
+	margin:20px auto; 
 	padding: 20px 20px;
 	font-size: 40px;
 	position: relative;
@@ -79,7 +79,6 @@ margin: 0.5em;
     padding: 1rem;
     gap: 3em;
 }
-
 
 .card {
     width: auto;
@@ -129,7 +128,6 @@ margin: 0.5em;
     border-radius: 15px;
   } 
 
-
 .card-body {
     position: relative;
 }
@@ -143,8 +141,8 @@ img {
     right: 0;
     bottom: 0;  
     left: 0;
-
 }
+
 .choose {
     width: 60%;
     border-radius: 5px;
@@ -182,13 +180,13 @@ img {
   -webkit-transform:scale(1.5);transform:scale(1.5);
 }
 .option {
-  cursor: pointer; /* Cambiar el cursor al de una mano */
+  cursor: pointer; 
 }
 #computer-img {
   transform: scaleX(-1);
 }
 
-/* Estilos para el pop-up */
+/* pop-up */
 .popup {
   display: none;
   position: fixed;
@@ -197,7 +195,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999; /* Asegurar que el pop-up aparezca por encima de todo */
+  z-index: 9999; 
 }
 
 .popup-content {
@@ -212,7 +210,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  z-index: 10000; /* Asegurar que el contenido del pop-up aparezca por encima del fondo */
+  z-index: 10000; 
 }
 
 #reset-button {
