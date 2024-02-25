@@ -1,0 +1,228 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to left top, #cf04b5, #bc00b1, #a900ad, #9500a8, #8100a3, #761baa, #6a29b0, #5c33b6, #5249c9, #455cda, #326eea, #1180f8);
+  background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la ventana del navegador */
+  background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+}
+.title {
+text-align: center; 
+font-family: Comic Sans MS; 
+font-weight:bold; 
+font-size: 50px; 
+color: rgb(255, 48, 255); 
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF0DE5 0px 0px 20px, #FF0DE5 0px 0px 30px, #FF0DE5 0px 0px 40px, #FF0DE5 0px 0px 50px, #FF0DE5 0px 0px 75px;
+margin: 0.5em;
+}
+
+.inside-box {
+    margin: 1em;
+    position: relative;
+}
+.designed p{
+  text-align: center;
+  font-family: 'Pacifico';
+  font-size: 25px;
+}
+
+.score-board{
+	width: 300px;
+	border:2px solid rgb(255, 48, 255);
+	text-align: center;
+	margin:20px auto; /*top and bottom 20 px and centre it*/
+	padding: 20px 20px;
+	font-size: 40px;
+	position: relative;
+	transition: 0.3s ease-in;
+  background-color: #323042;
+}
+.score-board:hover{
+	background-color: #17161f;
+}
+.badge{
+	background-color: rgb(255, 48, 255); 
+	padding: 2px 20px;
+	font-size: 20px;
+}
+#user-label{
+	position: absolute;
+	top:20px;
+	left: -30px;
+}
+#comp-label{
+	position: absolute;
+	top: 20px;
+	right: -45px;
+}
+.result{
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+#user-score, #comp-score {
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  padding: 3px 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color:rgb(255, 48, 255);
+  font-size: 60px;
+}
+
+.players {
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem;
+    gap: 3em;
+}
+
+
+.card {
+    width: auto;
+    height: 30vh;
+    padding: 1em;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .card h1 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  } 
+
+
+.card-body {
+    position: relative;
+}
+img {
+    z-index: 1;
+    height: 500px;
+    width: auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;  
+    left: 0;
+
+}
+.choose {
+    width: 60%;
+    border-radius: 5px;
+    
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+    color: rgb(255, 48, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+}
+.choose-text{
+    margin-bottom: 2em;
+    text-align: center; 
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    font-size: 40px; 
+    color: rgb(255, 48, 255); 
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF0DE5 0px 0px 20px, #FF0DE5 0px 0px 30px, #FF0DE5 0px 0px 40px, #FF0DE5 0px 0px 50px, #FF0DE5 0px 0px 75px;
+}
+
+.container-img-small{
+  width: 110px;
+  height: 110px;
+  position: relative;
+}
+.container-img-small img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: visible;
+}
+.container-img-small img:hover{
+  -webkit-transform:scale(1.5);transform:scale(1.5);
+}
+.option {
+  cursor: pointer; /* Cambiar el cursor al de una mano */
+}
+#computer-img {
+  transform: scaleX(-1);
+}
+
+/* Estilos para el pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999; /* Asegurar que el pop-up aparezca por encima de todo */
+}
+
+.popup-content {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  z-index: 10000; /* Asegurar que el contenido del pop-up aparezca por encima del fondo */
+}
+
+#reset-button {
+  float: center;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: #FF0DE5;
+  color: white;
+  border-radius: 4px;
+}
