@@ -14,7 +14,7 @@ Here you can see the code for the famous rock-paper-scissors game using HTML, CS
 ## Features
 
 - HTML using Bootstrap.
-- A counter to 5 games designed with CSS and JS for the functionality
+- A counter to 5 matches designed with CSS and JS for the functionality
 - A pop up when finish the game
 - Reset button when finish.
 - PNG original images.
